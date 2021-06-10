@@ -43,6 +43,10 @@ menu a:hover{
 .search{
     display:flex;
     flex-direction: row;
+    border: solid;
+    border-width: thin;
+    border-radius: 20px;
+    width: 270px
 }
 
 .filtres{
@@ -73,7 +77,7 @@ menu a:hover{
 
 .hostingMain{
     border-radius: 20px;
-    width: 75%;
+    width: 70%;
     height: 550px;
     background-color: lightgrey;
     display: grid;
@@ -85,36 +89,36 @@ menu a:hover{
     margin-right: 10px;
     margin-top: 30px;
     margin-left: 10px;
-    width: 250px;
-    height: 190px;
+    width: 280px;
+    height: 200px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 5px;
     background-color: white;
     border-radius: 20px;
 }
 
-#redim_img {
+.redim_img {
     height : 120px;
-    width : 250px;
+    width : 280px;
     overflow : hidden;
 }
 
 .imghostingMain{
-    margin: 0;
-    height: 80%;
-    border-radius: 20px;
+    margin: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-size: cover;
     overflow: hidden;
 }
 
 .texthost{
-    line-height: 70%;
-    height: 50%
+    height: 100%;
 }
 
 .hostingPopular{
-    width: 25%;
+    width: 30%;
     height: 550px;
     border-radius: 20px;
     background-color: lightgray;
@@ -124,21 +128,35 @@ menu a:hover{
 }
 
 .hostingPopular article{
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 380px;
+    height: 120px;
     display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 30px
     flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
     background-color: white;
-    width: 300px;
-    height: 160px;
+    border-radius: 20px;
 }
 
 .imghostingPopular{
-    width: 79px;
-    height: 83px;
-    border-radius: 20px;
+    margin: 0px;
+    width: 120px;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+}
+
+.txtpop{
+    width: 400px;
+    height: 120px;
+    line-height: 100%;
+    text-align: left;
 }
 
 .activity{
@@ -162,6 +180,14 @@ menu a:hover{
     height: 215px;
     background-color: white;
     border-radius: 20px;
+}
+
+nav{
+    margin: 20px;
+    color: blue;
+}
+nav :hover{
+    text-decoration: overline blue;
 }
 
 #cinq{
@@ -197,5 +223,4 @@ footer{
     height: 134px;
     display: flex;
     flex-direction: row;
-    grid
 }
