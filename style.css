@@ -5,6 +5,7 @@ html{
 body{
     width: 100%;
     height: auto;
+    margin: 0 30px;
 }
 
 header{
@@ -14,49 +15,156 @@ header{
     flex-direction: row;
 }
 
+h3{
+    margin: 0;
+}
 
+h2{
+    font-weight: bold;
+}
 
 .logo{
-    width: 75%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .menu{
-    width: 25%;
+    width: 35%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    padding: 20px;
+    color: #0065FC;
 }
 
-menu a:hover{
-    border-top: solid;
-    border-top: blue;
+.lien.menu.signup{
+    border: none;
+    color: #0065FC;
+}
+
+.lien.menu:hover{
+    border-top: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .infos{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    text-align: left;
 }
 
-
 .search{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    border: solid;
-    border-width: thin;
     border-radius: 20px;
-    width: 270px
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 60px;
+    width: 230px;
+}
+
+button{
+    height: 60px;
+    width: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0065FC;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.recherche{
+    width: 230px;
+    color: black;
+    font-size: 18px;
+}
+
+.iconsize{
+    height: 60px;
+    width: 60px;
+    background-color: lightgray;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;;
+    line-height: 100%;
+    text-align: center;
+}
+
+.fas.fa-map-marker-alt{
+    margin-top: 20px;
+}
+
+.filtres h2{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.filtres a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.fa-child:before, .fa-heart:before, .fa-dog:before, .fa-money-bill-wave:before{
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    color:#0065FC
 }
 
 .filtres{
     display: flex;
     flex-flow: row wrap;
+
+    height: auto;
 }
 
-.infos{
-    width: 100%;
-    height: 184px;
+.i{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.elementfiltre{
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.fa-info:before{
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: #0065FC;
 }
 
 .hosting{
@@ -68,21 +176,23 @@ menu a:hover{
     align-items: center; 
     margin-top: 30px;  
     margin-right: 20px;
+    color: black;
 }
 
 .lien{
     text-decoration: none;
-    color: black;
+    color : black;
 }
 
 .hostingMain{
     border-radius: 20px;
-    width: 70%;
+    width: 65%;
     height: 550px;
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 30px
+    margin: 30px;
+    color: black;
 }
 
 .host{
@@ -114,14 +224,32 @@ menu a:hover{
 }
 
 .texthost{
-    height: 100%;
+    height: 100px;
+    line-height: 170%;
+    padding-left: 10px
+}
+
+.true{
+    color: #0065FC;
+}
+
+.false{
+    color: lightgrey;
+}
+
+aside h2{
+    display: inline-block;
+}
+
+.fas .fa-chart-line{
+    display: inline-block;
 }
 
 .hostingPopular{
-    width: 30%;
+    width: 35%;
     height: 550px;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: #F2F2F2;
     display: block;
     overflow: hidden;
     margin: 30px;
@@ -131,11 +259,11 @@ menu a:hover{
     margin-right: 20px;
     margin-top: 30px;
     margin-left: 10px;
-    width: 380px;
+    width: auto;
     height: 120px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 5px;
     background-color: white;
     border-radius: 20px;
@@ -143,25 +271,27 @@ menu a:hover{
 
 .imghostingPopular{
     margin: 0px;
-    width: 120px;
+    min-width: 100px;
+    max-width: 100px;
     height: 120px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-    float: left;
     margin-right: 30px;
+    display: inline-block;
 }
 
 .txtpop{
-    width: 400px;
-    height: 120px;
-    line-height: 100%;
+    height: 110px;
+    width: auto;
+    max-width: 300px;
     text-align: left;
+    display: inline-block;
 }
 
 .activity{
     width: 100%;
-    height: auto;
+    height: 550px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin: 40px;
@@ -182,13 +312,7 @@ menu a:hover{
     border-radius: 20px;
 }
 
-nav{
-    margin: 20px;
-    color: blue;
-}
-nav :hover{
-    text-decoration: overline blue;
-}
+
 
 #cinq{
     width: 250px;
