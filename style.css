@@ -191,10 +191,10 @@ button{
     flex-direction: column;
     border-radius: 20px;
     width: 60%;
-    height: 525px;
+    height: 520px;
     background-color: #F2F2F2;
     color: black;
-    padding: 20px;
+    padding: 15px;
 }
 
 .hostingArticle{
@@ -309,12 +309,11 @@ aside h2{
 }
 
 .activity{
-    padding: 20px;
-    margin: 0;
-    width: 1200px;
+    padding: 10px;
+    width: 100%;
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,310px);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 20px;
 }
@@ -323,19 +322,16 @@ aside h2{
     border-radius: 20px;
     overflow: hidden;
     width: 280px;
-    display: flex;
-    flex-direction: column;
-    transition-duration: 0.1s;
 }
 
 .lien img{
     border-radius: 20px 20px 0 0;
 }
 
-.lien h3{
+.activity h3{
     height: 40px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
 }
   
 #cube1{
@@ -363,10 +359,14 @@ aside h2{
 }
 
 footer{
-    margin-top: 60px;
-    width: 1200px;
+    width: 90%;
     height: 134px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: left;
+}
+
+.colonne{
+    margin-right: 170px;
+    padding: 10px;
 }
