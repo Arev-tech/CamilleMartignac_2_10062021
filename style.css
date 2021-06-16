@@ -309,71 +309,64 @@ aside h2{
 }
 
 .activity{
-    width: 1300px;
+    padding: 20px;
+    margin: 0;
+    width: 1200px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 60px 224px repeat(3,32px) 224px;
+    grid-gap: 20px;
+}
+.cube{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-}
-.titleAct{
-    width: 100%;
-}
-
-.activite{
-    padding: 20px;
-    border: solid lightgrey;
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: 224px repeat(3,32px) 224px;
-    grid-gap: 20px;
+    transition-duration: 0.1s;
 }
 
 .lien img{
     border-radius: 20px 20px 0 0;
 }
 
-.activity .lien{
-    border-radius: 20px;
-    box-shadow: 0 0 20px #0000002e;
-    transition-duration: 0.1s;
-}
-
 .lien h3{
+    height: 40px;
     text-align: left;
     padding-left: 10px;
 }
   
-.un{
-    grid-area: 1 / 1 / 6 / 2;
+#cube1{
+    grid-area: 2 / 1 / 7 / 2;
 }
 
-.redim1{
-    height: 484px;
-    width: 320px;
+#cube2{
+    grid-area: 2 / 2 / 5 / 3;
 }
 
-.deux{
-    grid-area: 1 / 2 / 4 / 3;
+#cube3{
+    grid-area: 2 / 3 / 7 / 4;
 }
 
-.trois{
-    grid-area: 1 / 3 / 6 / 4;
+#cube4{
+    grid-area: 2 / 4 / 3 / 5;
 }
 
-.quatre{
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.cinq{
-    grid-area: 5 / 2 / 6 / 3;
+#cube5{
+    grid-area: 6 / 2 / 7 / 3;
 }
  
-.six{
-    grid-area: 4 / 4 / 6 / 5;
+#cube6{
+    grid-area: 5 / 4 / 7 / 5;
 }
 
 footer{
-    width: 100%;
+    margin-top: 60px;
+    width: 1200px;
     height: 134px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
