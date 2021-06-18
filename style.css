@@ -180,12 +180,12 @@ button{
 
 @media all and (max-width:480px){
 
-    .hosting{
+.hosting{
         display: flex;
         flex-direction: column;
         width: 100%;
         color: black;
-    }
+}
 }
 
 .hosting{
