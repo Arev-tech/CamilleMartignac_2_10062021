@@ -23,14 +23,6 @@ h2{
     font-weight: bold;
 }
 
-@media(max-width: 767px){
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-}
-
 .logo{
     width: 65%;
     display: flex;
@@ -44,7 +36,7 @@ body{
     flex-direction: row;
     justify-content: center;
     text-align: right;
-    padding: 20px;
+    padding: 30px;
     color: #0065FC;
 }
 
@@ -178,7 +170,7 @@ button{
     color: #0065FC;
 }
 
-@media all and (max-width:480px){
+@media all and (max-width:414px){
 
 .hosting{
         display: flex;
