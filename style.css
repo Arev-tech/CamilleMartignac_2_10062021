@@ -1,12 +1,11 @@
 html{
     font-family: raleway, sans-serif;
+    margin: 20px;
+
 }
 
 body{
     width: 100%;
-    height: 100%;
-    margin: 0 30px;
-    flex-wrap: wrap;
 }
 
 header{
@@ -22,6 +21,14 @@ h3{
 
 h2{
     font-weight: bold;
+}
+
+@media(max-width: 767px){
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 }
 
 .logo{
@@ -139,7 +146,6 @@ button{
 .filtres{
     display: flex;
     flex-flow: row wrap;
-
     height: auto;
 }
 
@@ -180,8 +186,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 30px;  
-    margin-right: 20px;
+    margin-top: 30px;
     color: black;
 }
 
@@ -261,9 +266,9 @@ aside h2{
 }
 
 .hostingPopular{
-    width: 30%;
+    width: 31%;
     height: 550px;
-    margin: auto;
+    margin-left: 50px;
     border-radius: 20px;
     background-color: #F2F2F2;
     display: flex;
@@ -283,7 +288,7 @@ aside h2{
     margin-bottom: auto;
     margin-left: 10px;
     width: auto;
-    height: 120px;
+    height: 130px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -294,19 +299,19 @@ aside h2{
 
 .imghostingPopular{
     margin: 5px;
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 110x;
+    max-width: 110px;
     height: 120px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 10px;
     display: inline-block;
 }
 
 .txtpop{
-    margin-top: 5px;
-    margin-right: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
     height: 110px;
     width: auto;
     max-width: 300px;
@@ -317,13 +322,13 @@ aside h2{
 
 .activity{
     padding: 10px;
-    width: 100%;
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(4,310px);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 20px;
 }
+
 .cube{
     box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
@@ -366,8 +371,9 @@ aside h2{
 }
 
 footer{
-    width: 90%;
-    height: 134px;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -376,4 +382,5 @@ footer{
 .colonne{
     margin-right: 170px;
     padding: 10px;
+    line-height: 170%;
 }
