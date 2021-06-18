@@ -178,6 +178,15 @@ button{
     color: #0065FC;
 }
 
+@media(max-width: 767px){
+
+    .hosting{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: black;
+    }
+}
 .hosting{
     width: 100%;
     height: 550px;
