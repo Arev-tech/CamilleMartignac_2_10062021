@@ -13,6 +13,18 @@ header{
     flex-direction: row;
 }
 
+@media screen and (max-width: 767px) {
+.hosting{
+    display: flex;
+    flex-direction: column;
+}
+
+.hostingMain{
+    width: 100%;
+}
+
+}
+
 h3{
     margin: 0;
 }
