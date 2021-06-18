@@ -52,8 +52,6 @@ h2{
 .lien.menu:hover{
     border-top: solid #0065FC;
     color: #0065FC;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 
@@ -173,11 +171,12 @@ button{
 @media all and (max-width:414px){
 
 .hosting{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: black;
 }
+
 }
 
 .hosting{
@@ -219,6 +218,7 @@ button{
 }
 
 .host{
+    box-shadow: 0 0 20px #0000002e;
     width: auto;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -286,6 +286,7 @@ aside h2{
 }
 
 .hostingPopular article{
+    box-shadow: 0 0 20px #0000002e;
     margin-right: 20px;
     margin-bottom: auto;
     margin-left: 10px;
