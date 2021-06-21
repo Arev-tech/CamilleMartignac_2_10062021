@@ -181,6 +181,8 @@ button{
     color: #0065FC;
 }
 
+/* Règles pour téléphones*/
+
 @media screen and (max-width:1024px){
 
 .hosting{
@@ -195,6 +197,7 @@ button{
 }
     
 .hostingMain{
+    order: 2;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -237,8 +240,110 @@ button{
     padding-left: 10px
 }
 
+aside h2{
+    display: inline-block;
+}
+
+.fas .fa-chart-line{
+    display: inline-block;
+}
+
+.hostingPopular{
+    order: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titlePop{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hostingPopular article{
+    box-shadow: 0 0 20px #0000002e;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 20px;
+}
+#imgLeSoleilDuMatin{
+    width: 150px;
+    height: 120px;
+}
+
+#imgAuCoeurDeLEau{
+    width: 120px;
+    height: 120px;
+}
+
+#imgHotelToutBeauEtBlanc{
+    width: 120px;
+    height: 120px;
+}
+
+.activity{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cube{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+}
+
+#imgVieuxPort{
+    width: auto;
+    height: 570px;
+}
+
+#imgFortDePomegues{
+    width: auto;
+    height: 280px;
+}
+
+#imgParcNationalDesCalanques{
+    width: auto;
+    height: 570px;
+}
+
+#imgNotreDameDeLaGarde{
+    width: auto;
+    height: 164px;
+}
+
+#imgIlesDuFrioul{
+    width: auto;
+    height: 170px;
+}
+
+#imgParcLongchamp{
+    width: auto;
+    height: 200px;
+}
 
 }
+
+/* règles en commun */
 
 .lien{
     text-decoration: none;
@@ -400,7 +505,6 @@ aside h2{
     display: inline-block;
     vertical-align: top;
 }
-}
 
 .activity{
     padding: 10px;
@@ -481,6 +585,11 @@ aside h2{
     width: 300px;
     height: 200px;
 }
+}
+
+/* Fin des règles ordi*/ 
+
+
 
 footer{
     background-color: #F2F2F2;
