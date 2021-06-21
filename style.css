@@ -199,8 +199,24 @@ button{
 .hosting{
     display: flex;
     flex-direction: column;
-    width: 100%;
     color: black;
+}
+
+.hostingPopular{
+    order: 1;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.hostingPopular article{
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.hostingMain{
+    order: 2;
+    width: 100%;
 }
 
 }
