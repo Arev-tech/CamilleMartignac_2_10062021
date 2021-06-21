@@ -206,17 +206,21 @@ button{
     order: 1;
     width: 100%;
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
 }
 
 .hostingPopular article{
     width: 100%;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .hostingMain{
     order: 2;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 }
