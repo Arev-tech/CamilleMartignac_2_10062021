@@ -312,33 +312,33 @@ aside h2{
 }
 
 #imgVieuxPort{
-    width: auto;
-    height: 570px;
+    width: 100%;
+    height: 150px;
 }
 
 #imgFortDePomegues{
-    width: auto;
-    height: 280px;
+    width: 100%;
+    height: 150px;
 }
 
 #imgParcNationalDesCalanques{
-    width: auto;
-    height: 570px;
+    width: 100%;
+    height: 150px;
 }
 
 #imgNotreDameDeLaGarde{
-    width: auto;
-    height: 164px;
+    width: 100%;
+    height: 150px;
 }
 
 #imgIlesDuFrioul{
-    width: auto;
-    height: 170px;
+    width: 100%;
+    height: 150px;
 }
 
 #imgParcLongchamp{
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 150px;
 }
 
 }
