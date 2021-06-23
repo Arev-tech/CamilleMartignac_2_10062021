@@ -2,15 +2,17 @@
 
 html{
     font-family: raleway, sans-serif;
-    width: 99%;
+    width: 100%;
 }
 
 body{
-    width: 99%;
+    width: 100%;
+    margin: 0px;
 }
 
 header{
-    width: 99%;
+    width: auto;
+    padding: auto;
     height: 99px;
     display: flex;
     flex-direction: row;
@@ -25,7 +27,7 @@ h2{
 }
 
 .infos{
-    width: 99%;
+    width: 100%;
     text-align: left;
 }
 
@@ -164,9 +166,20 @@ button{
 .afficherplus{
     margin: 7px;
 }
-.titlepop{
-    align-content: space-between;
-    margin-top: 30px
+
+.containeurTitrePop{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.titlePop{
+    text-align: left;
+}
+
+.fa-chart-line{
+    margin: auto;
+    font-size: 25px;
 }
     
 .hostingPopular article{
@@ -189,6 +202,14 @@ button{
 #imgAuCoeurDeLEau{
     width: 120px;
     height: 120px;
+}
+
+.hostingPopular article .lien{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: auto;
 }
     
 #imgHotelToutBeauEtBlanc{
@@ -314,7 +335,7 @@ button{
     height: 250px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 5px;
     background-color: white;
     border-radius: 20px;
@@ -353,14 +374,8 @@ button{
     height: auto;
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-}
-
-article .lien{
-    margin: 0px;
-    width: 100%;
-    height: auto;
 }
 
 /* SECTION 3 */
@@ -604,7 +619,7 @@ aside h2{
 }
     
 .hostingPopular{
-    width: 31%;
+    width: 40%;
     height: 550px;
     margin-left: 50px;
     border-radius: 20px;
@@ -619,7 +634,7 @@ aside h2{
     padding-bottom: 20px;
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(4,310px);
+    grid-template-columns: repeat(4,25%);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 20px;
 }
