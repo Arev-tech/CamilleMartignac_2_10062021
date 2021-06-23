@@ -152,6 +152,68 @@ button{
     transform: scale(1.02);
 }
 
+.lien.elementfiltre:hover{
+    background-color: #F2F2F2;
+}
+
+.afficherplus{
+    margin: 7px;
+}
+.titlepop{
+    align-content: space-between;
+    margin-top: 30px
+}
+    
+.hostingPopular article{
+    box-shadow: 0 0 20px #0000002e;
+    width: 95%;
+    height: 130px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 20px;
+}
+#imgLeSoleilDuMatin{
+    width: 150px;
+    height: 120px;
+}
+    
+#imgAuCoeurDeLEau{
+    width: 120px;
+    height: 120px;
+}
+    
+#imgHotelToutBeauEtBlanc{
+    width: 120px;
+    height: 120px;
+}
+    
+.imghostingPopular{
+    margin: 5px;
+    min-width: 110x;
+    max-width: 110px;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+}
+    
+.txtpop{
+    padding-top: 5px;
+    padding-right: 15px;
+    height: 110px;
+    width: auto;
+    max-width: 300px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
 /* Règles pour les téléphones */
 
 @media screen and (max-width: 1024px){
@@ -287,33 +349,11 @@ button{
     flex-wrap: wrap;
 }
 
-.hostingPopular article{
-    box-shadow: 0 0 20px #0000002e;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    width: auto;
+
+a.lien{
+    margin: 0px;
+    width: 100%;
     height: auto;
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    background-color: white;
-    border-radius: 20px;
-}
-
-#imgLeSoleilDuMatin{
-    width: 150px;
-    height: auto;
-}
-
-#imgAuCoeurDeLEau{
-    width: 120px;
-    height: 120px;
-}
-
-#imgHotelToutBeauEtBlanc{
-    width: 120px;
-    height: 120px;
 }
 
 .activity{
@@ -330,6 +370,10 @@ button{
     width: 100%;
     height: 200px;
     margin: 5px;
+}
+
+.cube h3{
+    padding: 10px;
 }
 
 #imgVieuxPort{
@@ -559,61 +603,6 @@ aside h2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-    
-.titlepop{
-    align-content: space-between;
-    margin-top: 30px
-}
-    
-.hostingPopular article{
-    box-shadow: 0 0 20px #0000002e;
-    width: 95%;
-    height: 130px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    flex-wrap: wrap;
-    background-color: white;
-    border-radius: 20px;*
-}
-#imgLeSoleilDuMatin{
-    width: 150px;
-    height: 120px;
-}
-    
-#imgAuCoeurDeLEau{
-    width: 120px;
-    height: 120px;
-}
-    
-#imgHotelToutBeauEtBlanc{
-    width: 120px;
-    height: 120px;
-}
-    
-.imghostingPopular{
-    margin: 5px;
-    min-width: 110x;
-    max-width: 110px;
-    height: 120px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-    margin-right: 10px;
-    display: inline-block;
-}
-    
-.txtpop{
-    padding-top: 5px;
-    padding-right: 15px;
-    height: 110px;
-    width: auto;
-    max-width: 300px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
 }
     
 .activity{
