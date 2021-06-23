@@ -1,9 +1,12 @@
+/* Règles pour tous les écrans */
+
 html{
     font-family: raleway, sans-serif;
+    width: 100%;
 }
 
 body{
-    width: 100%;
+    width: 99%;
 }
 
 header{
@@ -21,96 +24,6 @@ h2{
     font-weight: bold;
 }
 
-@media screen and (max-width: 1024px){
-
-.header{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: 60% 40%;
-    grid-gap: 20px 0px;
-}
-
-.lien.menu.signup:hover{
-    border: none;
-    color: #0065FC;
-}
-
-a.signup{
-    color: #0065FC;
-    grid-area: 1 / 2 / 2 / 3;
-    text-align: center;
-    margin: auto;
-    font-weight: bold;
-    
-}
-
-a.hebergement{
-    grid-area: 2 / 1 / 3 / 2;
-    text-align: center;
-    border-bottom: solid #DEEBFF ;
-}
-
-a.activites{
-    grid-area: 2 / 2 / 3 / 3;
-    text-align: center;
-    border-bottom: solid #DEEBFF;
-}
-
-.lien.menu:hover{
-    border-bottom: solid #0065FC;
-    color: #0065FC;
-}
-
-.lien.menu:focus{
-    border-bottom: solid #0065FC;
-    color: #0065FC;
-}
-
-}
-
-@media screen and (min-width:1024px){
-
-    .logo{
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-nav.menu{
-    padding: 0;
-}
-
-.menu{
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: right;
-    padding: 35px;
-    color: #0065FC;
-}
-
- 
-.lien.menu.signup:hover{
-    border: none;
-    color: #0065FC;
-}
-
-.lien.menu.signup{
-    color: #0065FC;
-}
-
-.lien.menu:hover{
-    border-top: solid #0065FC;
-    color: #0065FC;
-}
-
-.lien.menu:focus{
-    border-top: solid #0065FC;
-    color: #0065FC;
-}
-
-}
 .infos{
     width: 100%;
     text-align: left;
@@ -119,7 +32,7 @@ nav.menu{
 .search{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -128,12 +41,12 @@ nav.menu{
 ::placeholder{
     font-weight: bold;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 input{
     height: 60px;
-    width: 230px;
+    width: 250px;
 }
 
 button{
@@ -160,20 +73,20 @@ button{
     width: 60px;
     background-color: lightgray;
     border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;;
+    border-top-left-radius: 20px;
     line-height: 100%;
     text-align: center;
 }
 
 .fas.fa-map-marker-alt{
     margin-top: 20px;
+    font-size: 22px;
 }
 
 .filtres h2{
     margin-top: 15px;
     margin-right: 20px;
 }
-
 .filtres a{
     text-decoration: none;
     color: black;
@@ -230,22 +143,102 @@ button{
     color: #0065FC;
 }
 
-/* Règles pour téléphones*/
-
-@media screen and (max-width:1024px){
-
-.hostingMain{
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: auto;
-    color: black;
+.lien{
+    text-decoration: none;
+    color : black;
 }
 
+.lien:hover{
+    transform: scale(1.02);
+}
+
+/* Règles pour les téléphones */
+
+@media screen and (max-width: 1024px){
+
+/* HEADER */
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 19%;
+}
+    
+.lien.menu.signup:hover{
+    border: none;
+    color: #0065FC;
+}
+
+.signup{
+    align-self: right;
+    justify-self: right;
+}
+
+.logo{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: left;
+    width: 90%;
+}
+
+.menu{
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+}
+    
+.hebergement, .activites{
+    justify-content: center;
+    border-bottom: solid #F2F2F2;
+}
+    
+a.lien.menu.signup{
+    display: flex;
+    color: #0065FC;
+    text-align: right;
+    font-weight: bold;
+    grid-area: 1 / 2 / 2 / 3 ;
+}
+
+.activites:hover, .hebergement:hover{
+    border-bottom: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.hebergement:focus, .activites:focus{
+    border-bottom: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.bouton{
+    height: 60px;
+    width: 60px;
+    background-color: #0065FC;
+    border-radius: 0 20px 20px 0;
+    line-height: 100%;
+    text-align: center;
+}
+    
+.fas.fa-search{
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+    
+.fa-search::before{
+    width: auto;
+    height: auto;
+}
+
+button{
+    display: none;
+} 
+
+/*SECTION 2 */
+    
 .host{
     box-shadow: 0 0 20px #0000002e;
-    width: 95%;
+    width: 100%;
     margin-right: 10px;
     margin-bottom: 10px;
     height: 250px;
@@ -256,13 +249,21 @@ button{
     background-color: white;
     border-radius: 20px;
 }
-
+       
+.hostingMain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: black;
+}
+    
 .redim_img{
     height : 170px;
     width : 100%;
     overflow : hidden;
 }
-
+    
 .imghostingMain{
     margin: 0px;
     border-top-left-radius: 20px;
@@ -270,37 +271,20 @@ button{
     background-size: cover;
     overflow: hidden;
 }
-
+    
 .texthost{
     height: 100px;
     line-height: 170%;
     padding-left: 10px
 }
-
-aside h2{
-    display: inline-block;
-}
-
-.fas .fa-chart-line{
-    display: inline-block;
-}
-
+    
 .hostingPopular{
-    order: 1;
-    width: 95%;
+    width: 100%;
     height: auto;
-    border-radius: 20px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-.titlePop{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .hostingPopular article{
@@ -309,17 +293,17 @@ aside h2{
     margin-bottom: 20px;
     margin-left: 10px;
     width: auto;
-    height: 150px;
+    height: auto;
     display: flex;
-    flex-direction: column;
     overflow: hidden;
     flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
 }
+
 #imgLeSoleilDuMatin{
     width: 150px;
-    height: 120px;
+    height: auto;
 }
 
 #imgAuCoeurDeLEau{
@@ -336,7 +320,7 @@ aside h2{
     display: flex;
     height: auto;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
 }
 
 .cube{
@@ -381,39 +365,112 @@ aside h2{
 footer{
     background-color: #F2F2F2;
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: left;
 }
 
 .colonne{
     padding: 10px;
 }
-
 }
 
-/* Fin règles téléphone */
+/* Fin des règles pour les téléphones */
 
-/* règles en commun */
-
-.lien{
-    text-decoration: none;
-    color : black;
-}
-
-.lien:hover{
-    transform: scale(1.02);
-}
-
-/* Fin règles en commun */
-
-/*Règles pour ordinateur */
+/* Règles pour les ordis */
 
 @media screen and (min-width:1024px){
+
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    color: #0065FC;
+}
+
+.header.logo{
+    order: 1;
+    text-align: left;
+}
+
+.menu{
+    order: 2;
+    text-align: right;
+    padding: 20px;
+}
+
+.lien.menu.signup{
+    order: 3;
+    text-align: right;
+}
+ 
+.lien.menu.signup:hover{
+    border: none;
+    color: #0065FC;
+}
+
+.lien.menu.signup{
+    color: #0065FC;
+}
+
+.lien.menu:hover{
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+
+.lien.menu:focus{
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    color: #0065FC;
+}
     
+.header.logo{
+    order: 1;
+    text-align: left;
+}
+    
+.menu{
+    order: 2;
+    text-align: right;
+    padding: 20px;
+}
+    
+.lien.menu.signup{
+    order: 3;
+    text-align: right;
+}
+     
+.lien.menu.signup:hover{
+    border: none;
+    color: #0065FC;
+}
+    
+.lien.menu.signup{
+    color: #0065FC;
+}
+    
+.lien.menu:hover{
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+    
+.lien.menu:focus{
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+.fas.fa-search{
+    display: none;
+} 
+
 .hosting{
-    width: 99%;
+    width: 100%;
     height: 550px;
     overflow: hidden;
     border-radius: 20px;
@@ -423,8 +480,7 @@ footer{
     margin-top: 30px;
     color: black;
 }
-
-
+     
 .hostingMain{
     display: flex;
     flex-direction: column;
@@ -435,7 +491,7 @@ footer{
     color: black;
     padding: 15px;
 }
-
+    
 .hostingArticle{
     border-radius: 20px;
     width: 100%;
@@ -445,7 +501,7 @@ footer{
     grid-template-columns: repeat(3,1fr);
     color: black;
 }
-
+    
 .host{
     box-shadow: 0 0 20px #0000002e;
     width: auto;
@@ -459,13 +515,13 @@ footer{
     background-color: white;
     border-radius: 20px;
 }
-
+    
 .redim_img{
     height : 120px;
     width : 100%;
     overflow : hidden;
 }
-
+    
 .imghostingMain{
     margin: 0px;
     border-top-left-radius: 20px;
@@ -473,29 +529,27 @@ footer{
     background-size: cover;
     overflow: hidden;
 }
-
+    
 .texthost{
     height: 100px;
     line-height: 170%;
     padding-left: 10px
 }
-
+    
 .true{
     color: #0065FC;
 }
-
+    
 .false{
     color: lightgrey;
 }
-
+    
 aside h2{
     display: inline-block;
+    width: 100%;
+    padding:10px 0 0 20px;
 }
-
-.fas .fa-chart-line{
-    display: inline-block;
-}
-
+    
 .hostingPopular{
     width: 31%;
     height: 550px;
@@ -506,43 +560,39 @@ aside h2{
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-.titlePop{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    
+.titlepop{
+    align-content: space-between;
+    margin-top: 30px
 }
-
+    
 .hostingPopular article{
     box-shadow: 0 0 20px #0000002e;
-    margin-right: 20px;
-    margin-bottom: auto;
-    margin-left: 10px;
-    width: auto;
+    width: 95%;
     height: 130px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     flex-wrap: wrap;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 20px;*
 }
 #imgLeSoleilDuMatin{
     width: 150px;
     height: 120px;
 }
-
+    
 #imgAuCoeurDeLEau{
     width: 120px;
     height: 120px;
 }
-
+    
 #imgHotelToutBeauEtBlanc{
     width: 120px;
     height: 120px;
 }
-
+    
 .imghostingPopular{
     margin: 5px;
     min-width: 110x;
@@ -554,7 +604,7 @@ aside h2{
     margin-right: 10px;
     display: inline-block;
 }
-
+    
 .txtpop{
     padding-top: 5px;
     padding-right: 15px;
@@ -565,16 +615,17 @@ aside h2{
     display: inline-block;
     vertical-align: top;
 }
-
+    
 .activity{
-    padding: 10px;
+    width: 100%;
+    padding-bottom: 20px;
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(4,310px);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 20px;
 }
-
+    
 .cube{
     box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
@@ -582,84 +633,85 @@ aside h2{
     width: 280px;
     transform: scale(1.02);
 }
-
+    
 .lien img{
     border-radius: 20px 20px 0 0;
 }
-
+    
 .activity h3{
     height: 40px;
     text-align: left;
     padding-left: 20px;
 }
-  
+      
 #cube1{
     grid-area: 2 / 1 / 7 / 2;
 }
-
+    
 #imgVieuxPort{
     width: 500px;
     height: 570px;
 }
-
+  
 #cube2{
     grid-area: 2 / 2 / 5 / 3;
 }
-
+    
 #imgFortDePomegues{
     width: 300px;
     height: 280px;
 }
-
+    
 #cube3{
     grid-area: 2 / 3 / 7 / 4;
 }
-
+    
 #imgParcNationalDesCalanques{
     width: 500px;
     height: 570px;
 }
-
+    
 #cube4{
     grid-area: 2 / 4 / 3 / 5;
 }
-
+    
 #imgNotreDameDeLaGarde{
     width: 300px;
     height: 164px;
 }
-
+    
 #cube5{
     grid-area: 6 / 2 / 7 / 3;
 }
-
+    
 #imgIlesDuFrioul{
     width: 300px;
     height: 170px;
 }
- 
+     
 #cube6{
     grid-area: 5 / 4 / 7 / 5;
 }
-
+    
 #imgParcLongchamp{
     width: 300px;
     height: 200px;
 }
-
+    
 footer{
     background-color: #F2F2F2;
-    width: 99%;
+    width: 100%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: left;
 }
-
+   
 .colonne{
     margin-right: 170px;
     padding: 10px;
     line-height: 170%;
 }
-
+    
 }
+        

@@ -15,10 +15,11 @@
             <div class="logo">
                 <img src="images/logo/Reservia@3x.png" alt="logo Reservia" width="97" height="45" >
             </div>
-                <a href="#hebergement" class="lien menu hebergement">Hébergements</a>
-                <a href="#activites" class="lien menu activites">Activités</a>
-                <a href="" class="lien menu signup">S'inscrire</a>
-            
+            <a href="" class="lien menu signup">S'inscrire</a>
+            <nav class="menu">
+                <a href="#hebergement" class="lien menu hebergement" data-active="true">Hébergements</a>
+                <a href="#activites" class="lien menu activites" data-active="true">Activités</a>
+            </nav>
         </header>
 
         <!-- SECTION 1 -->
@@ -30,14 +31,14 @@
             <div class="search">
                 <div class="iconsize"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="recherche"><input type="search" placeholder="Marseille, France"></div>
-                <div><button>Rechercher</button></div>
+                <div class="bouton"><i class="fas fa-search"></i><button>Rechercher</button></div>
             </div>  
             <div class="filtres">
                 <h2>Filtres</h2>
-                <div class="elementfiltre"><a href=""><i class="fas fa-money-bill-wave"></i>  Économique</a></div>
-                <div class="elementfiltre"><a href=""><i class="fas fa-child"></i>  Familial</a></div>
-                <div class="elementfiltre"><a href=""><i class="fas fa-heart"></i>  Romantique</a></div>
-                <div class="elementfiltre"><a href=""><i class="fas fa-dog"></i>  Animaux autorisés</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-money-bill-wave"></i>  Économique</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-child"></i>  Familial</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-heart"></i>  Romantique</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-dog"></i>  Animaux autorisés</a></div>
             </div>
             <div class="i"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
         </section>
@@ -158,57 +159,57 @@
 
         <!-- ASIDE LES PLUS POPULAIRES -->
             <aside class="hostingPopular">
-                <h2 class="titlePop">Les plus populaires<i class="fas fa-chart-line"></i></h2>
-                <article>
-                    <a href="#" class="lien">
-                        <figure class="imghostingPopular">
-                            <img id="imgLeSoleilDuMatin" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                        </figure>
-                        <div class="txtpop">
-                            <h3>Hôtel Le soleil du matin</h3 >
-                            <p>Nuit à partir de <strong>128€</strong></p>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                        </div>
-                    </a>
-                </article>
+                <h2 class="titlePop">Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                    <article>
+                        <a href="#" class="lien">
+                            <figure class="imghostingPopular">
+                                <img id="imgLeSoleilDuMatin" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                            </figure>
+                            <div class="txtpop">
+                                <h3>Hôtel Le soleil du matin</h3 >
+                                <p>Nuit à partir de <strong>128€</strong></p>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                            </div>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="" class="lien">
-                        <figure class="imghostingPopular">
-                            <img id="imgAuCoeurDeLEau" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes">
-                        </figure>
-                        <div class="txtpop">
-                            <h3>Au coeur de l'eau<br> chambres d'hôtes</h3>
-                            <p>Nuit à partir de <strong>71€</strong></p>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star false"></i>
-                        </div>
-                    </a>
-                </article>
+                    <article>
+                        <a href="" class="lien">
+                            <figure class="imghostingPopular">
+                                <img id="imgAuCoeurDeLEau" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes">
+                            </figure>
+                            <div class="txtpop">
+                                <h3>Au coeur de l'eau<br> chambres d'hôtes</h3>
+                                <p>Nuit à partir de <strong>71€</strong></p>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star false"></i>
+                            </div>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="" class="lien">
-                        <figure class="imghostingPopular">
-                            <img id="imgHotelToutBeauEtBlanc" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
-                        </figure>
-                        <div class="txtpop">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de <strong>68€</strong></p>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star true"></i>
-                            <i class="fas fa-star false"></i>
-                        </div>
-                    </a>
-                </article>
+                    <article>
+                        <a href="" class="lien">
+                            <figure class="imghostingPopular">
+                                <img id="imgHotelToutBeauEtBlanc" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                            </figure>
+                            <div class="txtpop">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>68€</strong></p>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star true"></i>
+                                <i class="fas fa-star false"></i>
+                            </div>
+                        </a>
+                    </article>
             </aside>
         </div>
 
