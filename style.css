@@ -2,7 +2,7 @@
 
 html{
     font-family: raleway, sans-serif;
-    width: 100%;
+    width: 99%;
 }
 
 body{
@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 99%;
     height: 99px;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@ h2{
 }
 
 .infos{
-    width: 100%;
+    width: 99%;
     text-align: left;
 }
 
@@ -131,6 +131,11 @@ button{
     font-weight: bold;
 }
 
+.hosting{
+    width: 100%;
+    margin: 0px;
+}
+
 .fa-info:before{
     min-height: 2rem;
     min-width: 2rem;
@@ -207,7 +212,7 @@ button{
     padding-top: 5px;
     padding-right: 15px;
     height: 110px;
-    width: auto;
+    width: 100%;
     max-width: 300px;
     text-align: left;
     display: inline-block;
@@ -220,6 +225,7 @@ button{
 
 /* HEADER */
 .header{
+    margin: none;
     width: 100%;
     display: grid;
     grid-template-columns: 80% 19%;
@@ -272,6 +278,9 @@ a.lien.menu.signup{
     font-weight: bold;
 }
 
+
+/* SECTION 1 */
+
 .bouton{
     height: 60px;
     width: 60px;
@@ -301,7 +310,6 @@ button{
 .host{
     box-shadow: 0 0 20px #0000002e;
     width: 100%;
-    margin-right: 10px;
     margin-bottom: 10px;
     height: 250px;
     display: flex;
@@ -315,7 +323,7 @@ button{
 .hostingMain{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: auto;
     color: black;
 }
@@ -349,25 +357,26 @@ button{
     flex-wrap: wrap;
 }
 
-
-a.lien{
+article .lien{
     margin: 0px;
     width: 100%;
     height: auto;
 }
 
+/* SECTION 3 */
+
 .activity{
     display: flex;
     height: auto;
     flex-direction: column;
-    width: 100%;
+    width: 99%;
 }
 
 .cube{
     box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
     overflow: hidden;
-    width: 100%;
+    width: 98%;
     height: 200px;
     margin: 5px;
 }
