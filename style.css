@@ -11,8 +11,7 @@ body{
 }
 
 header{
-    width: auto;
-    padding: auto;
+    width: 100%;
     height: 99px;
     display: flex;
     flex-direction: row;
@@ -26,8 +25,11 @@ h2{
     font-weight: bold;
 }
 
+main{
+    padding: 0 30px 0 30px;
+}
 .infos{
-    width: 100%;
+    width: auto;
     text-align: left;
 }
 
@@ -135,7 +137,6 @@ button{
 
 .hosting{
     width: 100%;
-    margin: 0px;
 }
 
 .fa-info:before{
@@ -230,14 +231,17 @@ button{
 }
     
 .txtpop{
-    padding-top: 5px;
-    padding-right: 15px;
+    padding: 10px;
     height: 110px;
-    width: 100%;
+    width: auto;
     max-width: 300px;
     text-align: left;
     display: inline-block;
-    vertical-align: top;
+    vertical-align:middle;
+}
+
+.activity{
+    padding: 60px 0 60px 0;
 }
 
 /* Règles pour les téléphones */
@@ -465,12 +469,7 @@ footer{
 .menu{
     order: 2;
     text-align: right;
-    padding: 20px;
-}
-
-.lien.menu.signup{
-    order: 3;
-    text-align: right;
+    padding: 30px;
 }
  
 .lien.menu.signup:hover{
@@ -478,73 +477,40 @@ footer{
     color: #0065FC;
 }
 
-.lien.menu.signup{
-    color: #0065FC;
-}
-
-.lien.menu:hover{
+.lien.menu.hebergement{
     border-top: solid #0065FC;
     color: #0065FC;
+    font-weight: bold;
+    font-style: 22px;
+    padding-top: 27px;
 }
 
-.lien.menu:focus{
-    border-top: solid #0065FC;
-    color: #0065FC;
-}
-
-.header{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    color: #0065FC;
-}
-    
-.header.logo{
-    order: 1;
-    text-align: left;
-}
-    
-.menu{
-    order: 2;
-    text-align: right;
-    padding: 20px;
-}
-    
 .lien.menu.signup{
     order: 3;
     text-align: right;
-}
-     
-.lien.menu.signup:hover{
-    border: none;
     color: #0065FC;
 }
-    
-.lien.menu.signup{
-    color: #0065FC;
-}
-    
-.lien.menu:hover{
+
+.lien.menu.activites:hover{
     border-top: solid #0065FC;
     color: #0065FC;
+    font-weight: bold;
+    font-style: 22px;
+    padding-top: 27px;
 }
-    
-.lien.menu:focus{
-    border-top: solid #0065FC;
-    color: #0065FC;
-}
+
 .fas.fa-search{
     display: none;
 } 
 
 .hosting{
     width: 100%;
-    height: 550px;
+    height: auto;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: space-between;
     margin-top: 30px;
     color: black;
 }
@@ -554,10 +520,10 @@ footer{
     flex-direction: column;
     border-radius: 20px;
     width: 60%;
-    height: 520px;
+    height: auto;
     background-color: #F2F2F2;
     color: black;
-    padding: 15px;
+    padding: 20px;
 }
     
 .hostingArticle{
@@ -566,6 +532,7 @@ footer{
     height: auto;
     background-color: #F2F2F2;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
     color: black;
 }
@@ -615,26 +582,32 @@ footer{
 aside h2{
     display: inline-block;
     width: 100%;
-    padding:10px 0 0 20px;
+    padding: 0 0 0 20px;
 }
     
 .hostingPopular{
-    width: 40%;
-    height: 550px;
-    margin-left: 50px;
+    width: 30%;
+    margin-left: auto;
+    height: auto;
+    padding: 20px;
     border-radius: 20px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    align-content: space-around;
     flex-wrap: wrap;
+}
+
+.hostingPopular article{
+    margin: 20px;
 }
     
 .activity{
     width: 100%;
-    padding-bottom: 20px;
+    height: auto;;
     display: grid;
     overflow: hidden;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 20px;
 }
@@ -644,7 +617,14 @@ aside h2{
     border-radius: 20px;
     overflow: hidden;
     width: 280px;
+    display: flex;
+    flex-direction: column;
     transform: scale(1.02);
+}
+
+.cube h3{
+    order: 2;
+    height: 15%;
 }
     
 .lien img{
@@ -654,7 +634,7 @@ aside h2{
 .activity h3{
     height: 40px;
     text-align: left;
-    padding-left: 20px;
+    padding:0 0 0 10px;
 }
       
 #cube1{
@@ -663,7 +643,7 @@ aside h2{
     
 #imgVieuxPort{
     width: 500px;
-    height: 570px;
+    height: 575px;
 }
   
 #cube2{
@@ -681,7 +661,7 @@ aside h2{
     
 #imgParcNationalDesCalanques{
     width: 500px;
-    height: 570px;
+    height: 575px;
 }
     
 #cube4{
@@ -690,7 +670,7 @@ aside h2{
     
 #imgNotreDameDeLaGarde{
     width: 300px;
-    height: 164px;
+    height: 175px;
 }
     
 #cube5{
@@ -699,16 +679,16 @@ aside h2{
     
 #imgIlesDuFrioul{
     width: 300px;
-    height: 170px;
+    height: 180px;
 }
      
 #cube6{
-    grid-area: 5 / 4 / 7 / 5;
+    grid-area: 4 / 4 / 7 / 5;
 }
     
 #imgParcLongchamp{
     width: 300px;
-    height: 200px;
+    height: 280px;
 }
     
 footer{
