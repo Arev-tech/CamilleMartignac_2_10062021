@@ -321,7 +321,8 @@ a.lien.menu.signup{
 
 input{
     height: 60px;
-    width: 110%;
+    width: 120%;
+    border-radius: 0;
 }
     
 .fas.fa-search{
