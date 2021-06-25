@@ -47,7 +47,7 @@ h2{
 
 input{
     height: 60px;
-    width: 250px;
+    width: 100%;
     border: 1px solid #f2f2f2;
 }
 
@@ -301,13 +301,27 @@ a.lien.menu.signup{
     width: auto;
 }
 
+.search{
+    width: 100%;
+}
+
 .bouton{
     height: 60px;
     width: 60px;
     background-color: #0065FC;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
     line-height: 100%;
     text-align: center;
+}
+
+.iconsize{
+    height: 60px;
+    width: 60px;
+}
+
+input{
+    height: 60px;
+    width: 110%;
 }
     
 .fas.fa-search{
