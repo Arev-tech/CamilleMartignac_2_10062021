@@ -25,9 +25,6 @@ h2{
     font-weight: bold;
 }
 
-main{
-    padding: 0 30px 0 30px;
-}
 .infos{
     width: auto;
     text-align: left;
@@ -51,6 +48,7 @@ main{
 input{
     height: 60px;
     width: 250px;
+    border: 1px solid #f2f2f2;
 }
 
 button{
@@ -169,9 +167,9 @@ button{
 }
 
 .containeurTitrePop{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
 }
 
 .titlePop{
@@ -181,13 +179,14 @@ button{
 .fa-chart-line{
     margin: auto;
     font-size: 25px;
+    text-align: right;
 }
     
 .hostingPopular article{
     box-shadow: 0 0 20px #0000002e;
-    width: 95%;
+    width: 100%;
     height: 130px;
-    margin: 10px;
+    margin: 10px 0 10px 0;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -250,7 +249,7 @@ button{
 
 /* HEADER */
 .header{
-    margin: none;
+    margin: 0 30px 0 30px;
     width: 100%;
     display: grid;
     grid-template-columns: 80% 19%;
@@ -305,6 +304,9 @@ a.lien.menu.signup{
 
 
 /* SECTION 1 */
+.infos{
+    padding: 0 30px 0 30px;
+}
 
 .bouton{
     height: 60px;
@@ -328,7 +330,13 @@ a.lien.menu.signup{
 
 button{
     display: none;
-} 
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /*SECTION 2 */
     
@@ -338,17 +346,17 @@ button{
     margin-bottom: 10px;
     height: 250px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 5px;
     background-color: white;
     border-radius: 20px;
 }
        
 .hostingMain{
+    padding: 0 30px 0 30px;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     height: auto;
     color: black;
 }
@@ -375,6 +383,7 @@ button{
     
 .hostingPopular{
     width: 100%;
+    padding: 0 30px 0 30px;
     height: auto;
     background-color: #F2F2F2;
     display: flex;
@@ -382,13 +391,17 @@ button{
     flex-wrap: wrap;
 }
 
+.hostingPopular.lien{
+    width: 100%;
+}
 /* SECTION 3 */
 
 .activity{
+    padding: 0 30px 0 30px;
     display: flex;
     height: auto;
     flex-direction: column;
-    width: 99%;
+    width: 100%;
 }
 
 .cube{
@@ -402,6 +415,30 @@ button{
 
 .cube h3{
     padding: 10px;
+}
+
+#cube1{
+    order: 1;
+}
+
+#cube2{
+    order: 2;
+}
+
+#cube3{
+    order: 4;
+}
+
+#cube4{
+    order: 5;
+}
+
+#cube5{
+    order: 3;
+}
+
+#cube6{
+    order: 6;
 }
 
 #imgVieuxPort{
@@ -453,6 +490,10 @@ footer{
 /* Règles pour les ordis */
 
 @media screen and (min-width:1024px){
+
+main{
+    padding: 0 30px 0 30px;
+}
 
 .header{
     width: 100%;
