@@ -202,6 +202,7 @@ button{
     margin: 0px;
     width: 100%;
     height: auto;
+    align-items: center;
 }
     
 #imgHotelToutBeauEtBlanc{
@@ -236,7 +237,7 @@ button{
 
 /* Règles pour les téléphones */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 479px){
 
 /* HEADER */
 .header{
@@ -528,6 +529,267 @@ footer{
 }
 
 /* Fin des règles pour les téléphones */
+
+
+/* Début des règles pour les tablettes */
+
+@media screen and (max-width: 1023px) and (min-width:480px) {
+   
+main{
+    padding: 0 30px 0 30px;
+}
+    
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    color: #0065FC;
+}
+    
+.header.logo{
+    order: 1;
+    text-align: left;
+}
+   
+.menu{
+    order: 2;
+    text-align: right;
+    padding: 30px;
+}
+     
+.lien.menu.signup:hover{
+    border: none;
+    color: #0065FC;
+}
+    
+.lien.menu.hebergement{
+    border-top: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+    font-style: 22px;
+    padding-top: 27px;
+}
+ 
+.lien.menu.signup{
+    order: 3;
+    text-align: right;
+    color: #0065FC;
+}
+    
+.lien.menu.activites:hover{
+    border-top: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+    font-style: 22px;
+    padding-top: 27px;
+}
+    
+.fas.fa-search{
+    display: none;
+} 
+
+.hosting{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-between;
+    margin-top: 30px;
+    color: black;
+}
+     
+.hostingMain{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    color: black;
+    padding: 20px;
+    margin: 30px 0 30px 0;
+}
+    
+.hostingArticle{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    color: black;
+}
+    
+.host{
+    box-shadow: 0 0 20px #0000002e;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+    
+.redim_img{
+    height : 120px;
+    width : 100%;
+    overflow : hidden;
+}
+    
+.imghostingMain{
+    margin: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+}
+    
+.texthost{
+    height: auto;
+    line-height: 170%;
+    padding-left: 10px
+}
+    
+.true{
+    color: #0065FC;
+}
+    
+.false{
+    color: lightgrey;
+}
+    
+aside h2{
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 0 20px;
+}
+    
+.hostingPopular{
+    width: auto;
+    margin-left: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hostingPopular article{
+    margin: 20px;
+    width: 100%;
+}
+
+.activity{
+    margin: 30px 0 30px 0;
+    padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: auto;
+    flex-direction: row;
+    width: auto;
+}
+
+.titleAct{
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.cube{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+    width: auto;
+    margin: 5px;
+}
+
+.cube h3{
+    padding: 0 5px 0 5px;
+}
+
+#cube1{
+    order: 1;
+}
+
+#cube2{
+    order: 2;
+}
+
+#cube3{
+    order: 4;
+}
+
+#cube4{
+    order: 5;
+}
+
+#cube5{
+    order: 3;
+}
+
+#cube6{
+    order: 6;
+}
+
+#imgVieuxPort{
+    width: 100%;
+    height: 150px;
+}
+
+#imgFortDePomegues{
+    width: 100%;
+    height: 150px;
+}
+
+#imgParcNationalDesCalanques{
+    width: 100%;
+    height: 150px;
+}
+
+#imgNotreDameDeLaGarde{
+    width: 100%;
+    height: 150px;
+}
+
+#imgIlesDuFrioul{
+    width: 100%;
+    height: 150px;
+}
+
+#imgParcLongchamp{
+    width: 100%;
+    height: 150px;
+}
+
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+   
+.colonne{
+    margin-right: 170px;
+    padding: 10px;
+    line-height: 170%;
+}
+
+}
+/* Fin des règles */
+
 
 /* Règles pour les ordis */
 
