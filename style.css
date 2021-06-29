@@ -228,7 +228,6 @@ button{
     max-width: 300px;
     text-align: left;
     display: inline-block;
-    vertical-align:middle;
 }
 
 .activity{
@@ -281,6 +280,7 @@ a.lien.menu.signup{
     text-align: right;
     font-weight: bold;
     grid-area: 1 / 2 / 2 / 3 ;
+    justify-content: flex-end;
 }
 
 .activites:hover, .hebergement:hover{
@@ -535,53 +535,68 @@ footer{
 
 @media screen and (max-width: 1023px) and (min-width:480px) {
    
+html{
+    width: 100%;
+}
+
 main{
     padding: 0 30px 0 30px;
 }
     
 .header{
-    width: 100%;
+    margin: 30px 0 0 0;
+    width: auto;
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    color: #0065FC;
+    grid-template-columns: 70% 29%;
 }
     
-.header.logo{
-    order: 1;
-    text-align: left;
-}
-   
-.menu{
-    order: 2;
-    text-align: right;
-    padding: 30px;
-}
-     
 .lien.menu.signup:hover{
     border: none;
     color: #0065FC;
 }
-    
-.lien.menu.hebergement{
-    border-top: solid #0065FC;
-    color: #0065FC;
-    font-weight: bold;
-    font-style: 22px;
-    padding-top: 27px;
+
+.signup{
+    align-self: right;
+    justify-self: right;
+    margin-top: 10px;
 }
- 
-.lien.menu.signup{
-    order: 3;
+
+.logo{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: left;
+    width: 90%;
+}
+
+.menu{
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+}
+    
+.hebergement, .activites{
+    justify-content: center;
+    border-bottom: solid #F2F2F2;
+}
+    
+a.lien.menu.signup{
+    display: flex;
+    color: #0065FC;
     text-align: right;
-    color: #0065FC;
+    font-weight: bold;
+    grid-area: 1 / 2 / 2 / 3 ;
+    justify-content: flex-end;
 }
-    
-.lien.menu.activites:hover{
-    border-top: solid #0065FC;
+
+.activites:hover, .hebergement:hover{
+    border-bottom: solid #0065FC;
     color: #0065FC;
     font-weight: bold;
-    font-style: 22px;
-    padding-top: 27px;
+}
+
+.hebergement:focus, .activites:focus{
+    border-bottom: solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
 }
     
 .fas.fa-search{
@@ -619,7 +634,7 @@ main{
     background-color: #F2F2F2;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     color: black;
 }
     
@@ -673,7 +688,6 @@ aside h2{
     
 .hostingPopular{
     width: auto;
-    margin-left: auto;
     height: auto;
     padding: 20px;
     border-radius: 20px;
@@ -685,7 +699,7 @@ aside h2{
 }
 
 .hostingPopular article{
-    margin: 20px;
+    margin: 10px;
     width: 100%;
 }
 
@@ -693,7 +707,7 @@ aside h2{
     margin: 30px 0 30px 0;
     padding: 0 10px 0 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     height: auto;
     flex-direction: row;
@@ -702,7 +716,7 @@ aside h2{
 
 .titleAct{
     width: 100%;
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 .cube{
@@ -775,14 +789,15 @@ aside h2{
 footer{
     background-color: #F2F2F2;
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     justify-content: left;
 }
    
 .colonne{
-    margin-right: 170px;
+    margin: auto;
     padding: 10px;
     line-height: 170%;
 }
@@ -951,10 +966,9 @@ aside h2{
     width: 100%;
     height: auto;;
     display: grid;
-    overflow: hidden;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
     
 .cube{
@@ -988,7 +1002,7 @@ aside h2{
     
 #imgVieuxPort{
     width: 500px;
-    height: 575px;
+    height: 615px;
 }
   
 #cube2{
@@ -997,7 +1011,7 @@ aside h2{
     
 #imgFortDePomegues{
     width: 100%;
-    height: 280px;
+    height: 300px;
 }
     
 #cube3{
@@ -1006,7 +1020,7 @@ aside h2{
     
 #imgParcNationalDesCalanques{
     width: 500px;
-    height: 575px;
+    height: 615px;
 }
     
 #cube4{
@@ -1033,7 +1047,7 @@ aside h2{
     
 #imgParcLongchamp{
     width: 100%;
-    height: 280px;
+    height: 300px;
 }
     
 footer{
