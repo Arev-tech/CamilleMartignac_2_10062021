@@ -653,13 +653,14 @@ a.lien.menu.signup{
 }
     
 .redim_img{
-    height : 120px;
+    height : 100%;
     width : 100%;
     overflow : hidden;
 }
     
 .imghostingMain{
     margin: 0px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-size: cover;
