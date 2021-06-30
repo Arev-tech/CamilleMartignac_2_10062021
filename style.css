@@ -25,6 +25,10 @@ h2{
     font-weight: bold;
 }
 
+.logo{
+    padding: 20px 0 0 20px;
+}
+
 .infos{
     width: auto;
     text-align: left;
@@ -126,8 +130,7 @@ button{
     align-items: center;
     border: 2px solid #d9d9d9;
     border-radius: 30px;
-    margin-bottom: 15px;
-    margin-right: 20px;
+    margin: 0 10px 15px 0;
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
@@ -212,7 +215,7 @@ button{
     
 .imghostingPopular{
     margin: 5px;
-    width: 110px;
+    width: 50%;
     height: 120px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -240,10 +243,9 @@ button{
 
 /* HEADER */
 .header{
-    margin: 30px 30px 0 30px;
-    width: auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: 70% 29%;
+    grid-template-columns: 70% 30%;
 }
     
 .lien.menu.signup:hover{
@@ -261,6 +263,7 @@ button{
     grid-area: 1 / 1 / 2 / 2;
     text-align: left;
     width: 90%;
+    padding: 20px 0 20px 20px;
 }
 
 .menu{
@@ -272,6 +275,9 @@ button{
 .hebergement, .activites{
     justify-content: center;
     border-bottom: solid #F2F2F2;
+    width: 50%;
+    margin: 0px;
+    padding-bottom: 10px;
 }
     
 a.lien.menu.signup{
@@ -281,9 +287,11 @@ a.lien.menu.signup{
     font-weight: bold;
     grid-area: 1 / 2 / 2 / 3 ;
     justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px 0 0;
 }
 
-.activites:hover, .hebergement:hover{
+.activites:hover, .hebergement{
     border-bottom: solid #0065FC;
     color: #0065FC;
     font-weight: bold;
@@ -298,12 +306,13 @@ a.lien.menu.signup{
 
 /* SECTION 1 */
 .infos{
-    padding: 0 30px 0 30px;
     width: auto;
+    padding: 20px;
 }
 
 .search{
     width: 100%;
+    justify-content: space-between;
 }
 
 .bouton{
@@ -376,6 +385,7 @@ button{
     flex-direction: column;
     width: auto;
     height: auto;
+    overflow: hidden;
     color: black;
 }
 
@@ -451,13 +461,21 @@ button{
     box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
     overflow: hidden;
-    width: 98%;
+    width: 100%;
     height: 200px;
-    margin: 5px;
+    margin: 5px 0 5px 0;
 }
 
-.cube h3{
+.imgAct{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.txtAct{
     padding: 10px;
+    height: 50px;
+    overflow: hidden;
 }
 
 #cube1{
@@ -484,35 +502,12 @@ button{
     order: 6;
 }
 
-#imgVieuxPort{
+.imgAct{
     width: 100%;
     height: 150px;
 }
 
-#imgFortDePomegues{
-    width: 100%;
-    height: 150px;
-}
-
-#imgParcNationalDesCalanques{
-    width: 100%;
-    height: 150px;
-}
-
-#imgNotreDameDeLaGarde{
-    width: 100%;
-    height: 150px;
-}
-
-#imgIlesDuFrioul{
-    width: 100%;
-    height: 150px;
-}
-
-#imgParcLongchamp{
-    width: 100%;
-    height: 150px;
-}
+/* FOOTER */
 
 footer{
     background-color: #F2F2F2;
@@ -544,8 +539,8 @@ main{
 }
     
 .header{
-    margin: 30px 0 0 0;
-    width: auto;
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 70% 29%;
 }
@@ -555,27 +550,24 @@ main{
     color: #0065FC;
 }
 
-.signup{
-    align-self: right;
-    justify-self: right;
-    margin-top: 10px;
-}
 
 .logo{
     grid-area: 1 / 1 / 2 / 2;
     text-align: left;
-    width: 90%;
+    padding: 20px 0 20px 20px;
 }
 
 .menu{
     width: 100%;
     grid-area: 2 / 1 / 3 / 3;
     display: flex;
+    margin: 0;
 }
     
 .hebergement, .activites{
     justify-content: center;
     border-bottom: solid #F2F2F2;
+    padding:10px 0 10px 0;
 }
     
 a.lien.menu.signup{
@@ -585,6 +577,7 @@ a.lien.menu.signup{
     font-weight: bold;
     grid-area: 1 / 2 / 2 / 3 ;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .activites:hover, .hebergement:hover{
@@ -602,6 +595,10 @@ a.lien.menu.signup{
 .fas.fa-search{
     display: none;
 } 
+
+.titre{
+    padding-top: 30px;
+}
 
 .hosting{
     width: auto;
@@ -660,7 +657,7 @@ a.lien.menu.signup{
     
 .imghostingMain{
     margin: 0px;
-    height: 200px;
+    height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-size: cover;
@@ -1053,11 +1050,12 @@ aside h2{
     
 footer{
     background-color: #F2F2F2;
-    width: 100%;
+    width: auto;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: left;
+    padding:0 0 0 30px;
 }
    
 .colonne{
