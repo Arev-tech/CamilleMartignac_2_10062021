@@ -1097,7 +1097,7 @@ footer{
 header{
     max-width: 1440px;
     margin: auto;
-    padding: 0 30px;
+    padding: 0 2rem;
     box-sizing: border-box;
 }
 
@@ -1108,13 +1108,7 @@ header{
 main{
     max-width: 1440px;
     margin: auto;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
-
-footer{
-    margin: auto;
-    padding: 0 580px;
+    padding: 0 2rem;
     box-sizing: border-box;
 }
 
