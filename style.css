@@ -244,12 +244,6 @@ button{
     color: #0065FC;
 }
 
-.signup{
-    align-self: right;
-    justify-self: right;
-
-}
-
 .logo{
     grid-area: 1 / 1 / 2 / 2;
     text-align: left;
@@ -555,12 +549,6 @@ main{
 .lien.menu.signup:hover{
     border: none;
     color: #0065FC;
-}
-
-.signup{
-    align-self: right;
-    justify-self: right;
-
 }
 
 .logo{
@@ -872,7 +860,7 @@ main{
     border-top: solid #0065FC;
     color: #0065FC;
     font-weight: bold;
-    font-style: 22px;
+    font-size: 18px;
     padding-top: 27px;
 }
 
@@ -886,7 +874,7 @@ main{
     border-top: solid #0065FC;
     color: #0065FC;
     font-weight: bold;
-    font-style: 22px;
+    font-size: 18px;
     padding-top: 27px;
 }
 
