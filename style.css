@@ -52,8 +52,13 @@ h2{
 input{
     height: 60px;
     width: 100%;
+    color: black;
     border: 1px solid #f2f2f2;
 }
+
+input[type=text]:focus {
+    border: 1px solid #f2f2f2;
+  }
 
 button{
     height: 60px;
@@ -972,6 +977,11 @@ aside h2{
 
 .hostingPopular article{
     margin: 20px;
+}
+
+.titleAct{
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 5;
 }
     
 .activity{
