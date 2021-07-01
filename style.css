@@ -820,6 +820,8 @@ footer{
 
 @media screen and (min-width:1024px){
 
+
+    
 main{
     padding: 0 30px 0 30px;
 }
@@ -1077,4 +1079,27 @@ footer{
 }
     
 }
-        
+ 
+
+/* TRES GROS ORDIS */
+@media screen and (min-width: 1440px){
+
+header{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.logo{
+    padding: 30px 0 0 0;
+}
+
+main{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+}
