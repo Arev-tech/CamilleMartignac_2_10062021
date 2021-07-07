@@ -26,7 +26,7 @@ h2{
 }
 
 .logo{
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 30px;
 }
 
 .infos{
@@ -224,10 +224,6 @@ button{
     line-height: 100%;
 }
 
-.activity{
-    padding: 60px 0 60px 0;
-}
-
 /* Règles pour les téléphones */
 
 @media screen and (max-width: 479px){
@@ -271,9 +267,9 @@ a.lien.menu.signup{
     text-align: right;
     font-weight: bold;
     grid-area: 1 / 2 / 2 / 3 ;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 20px 20px 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .activites:hover, .hebergement{
@@ -450,11 +446,11 @@ button{
 /* SECTION 3 */
 
 .activity{
-    padding: 0 30px 0 30px;
     display: flex;
     height: auto;
     flex-direction: column;
     width: auto;
+    padding: 60px 30px 60px 30px;
 }
 
 .cube{
@@ -578,9 +574,9 @@ a.lien.menu.signup{
     text-align: right;
     font-weight: bold;
     grid-area: 1 / 2 / 2 / 3 ;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 20px 20px 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .activites:hover, .hebergement{
@@ -598,6 +594,10 @@ a.lien.menu.signup{
 .fas.fa-search{
     display: none;
 } 
+
+.infos{
+    padding: 0 30px 0 30px;
+}
 
 .titre{
     padding-top: 30px;
@@ -721,8 +721,7 @@ aside h2{
 }
 
 .activity{
-    margin: 30px 0 30px 0;
-    padding: 0 10px 0 10px;
+    padding: 30px 30px 30px 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -878,6 +877,10 @@ main{
     padding-top: 27px;
 }
 
+.infos{
+    padding: 0 30px 0 30px;
+}
+
 .fas.fa-search{
     display: none;
 } 
@@ -1002,12 +1005,13 @@ aside h2{
 }
 
 .activity{
-    width: 100%;
+    width: auto;
     height: auto;;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 60px 224px repeat(3,32px) 224px;
     grid-gap: 30px;
+    padding: 60px 30px 60px 30px;
 }
     
 .cube{
@@ -1017,7 +1021,6 @@ aside h2{
     width: 100%;
     display: flex;
     flex-direction: column;
-    transform: scale(1.02);
 }
 
 .cube h3{
@@ -1114,7 +1117,7 @@ footer{
 header{
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 32px;
     box-sizing: border-box;
 }
 
@@ -1122,10 +1125,31 @@ header{
     padding: 30px 0 0 0;
 }
 
+.infos{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
 main{
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.activity{
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 32px;
+    box-sizing: border-box;
+}
+
+footer{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 32px;
     box-sizing: border-box;
 }
 

@@ -11,42 +11,41 @@
     </head>
 
     <body>
-        
         <!-- HEADER -->
-            <header class = "header">
-                <div class="logo">
-                    <img src="images/logo/Reservia@3x.png" alt="logo Reservia" width="97" height="45" >
-                </div>
-                <a href="" class="lien menu signup">S'inscrire</a>
-                <nav class="menu">
-                    <a href="#hebergement" class="lien menu hebergement">Hébergements</a>
-                    <a href="#activites" class="lien menu activites">Activités</a>
-                </nav>
-            </header>
-        <main>
-            <!-- SECTION 1 -->
-            <section class="infos">
-                <div class="titre">
-                    <h2>Trouvez votre hébergement pour vos vacances de rêve</h2>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-                <div class="search">
-                    <div class="iconsize"><i class="fas fa-map-marker-alt"></i></div>
-                    <div class="recherche"><input type="search" placeholder=" Marseille, France"></div>
-                    <div class="bouton"><i class="fas fa-search"></i><button>Rechercher</button></div>
-                </div>  
-                <div class="filtres">
-                    <h2>Filtres</h2>
-                    <div class="elementfiltre lien"><a href=""><i class="fas fa-money-bill-wave"></i>  Économique</a></div>
-                    <div class="elementfiltre lien"><a href=""><i class="fas fa-child"></i>  Familial</a></div>
-                    <div class="elementfiltre lien"><a href=""><i class="fas fa-heart"></i>  Romantique</a></div>
-                    <div class="elementfiltre lien"><a href=""><i class="fas fa-dog"></i>  Animaux autorisés</a></div>
-                </div>
-                <div class="i"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
-            </section>
-
-            <!-- SECTION 2 -->
+        <header class = "header">
+            <div class="logo">
+                <img src="images/logo/Reservia@3x.png" alt="logo Reservia" width="97" height="45" >
+            </div>
+            <a href="" class="lien menu signup">S'inscrire</a>
+            <nav class="menu">
+                <a href="#hebergement" class="lien menu hebergement">Hébergements</a>
+                <a href="#activites" class="lien menu activites">Activités</a>
+            </nav>
+        </header>
+        <!-- SECTION 1 INFOS -->
+        <section class="infos">
+            <div class="titre">
+                <h2>Trouvez votre hébergement pour vos vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="search">
+                <div class="iconsize"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="recherche"><input type="search" placeholder=" Marseille, France"></div>
+                <div class="bouton"><i class="fas fa-search"></i><button>Rechercher</button></div>
+            </div>  
+            <div class="filtres">
+                <h2>Filtres</h2>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-money-bill-wave"></i>  Économique</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-child"></i>  Familial</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-heart"></i>  Romantique</a></div>
+                <div class="elementfiltre lien"><a href=""><i class="fas fa-dog"></i>  Animaux autorisés</a></div>
+            </div>
+            <div class="i"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
+        </section>
+        <!-- SECTION 2 HEBERGEMENT -->
+        <main>    
             <div class="hosting" id="hebergement">
+                <!--Section Hebergement à marseille-->
                 <section class="hostingMain">
                     <div class="titleHost">
                         <h2>Hébergements à Marseille</h2>
@@ -158,8 +157,7 @@
                         </div>    
                     </div>
                 </section>
-
-            <!-- ASIDE LES PLUS POPULAIRES -->
+            <!-- LES PLUS POPULAIRES -->
                 <aside class="hostingPopular">
                     <div class="containeurTitrePop">
                         <h2 class="titlePop">Les plus populaires</h2> 
@@ -217,50 +215,48 @@
                         </article>
                 </aside>
             </div>
-
-            <!-- SECTION 3 -->
-            <section class="activity" id="activites">
-                <h2 class="titleAct">Activités à Marseille</h2>
-                <div class="cube" id="cube1">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgVieuxPort" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <h3 class="txtAct">Vieux Port</h3>
-                    </a>
-                </div>
-                <div class="cube" id="cube2">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgFortDePomegues" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                        <h3 class="txtAct">Fort de Pomègues</h3>
-                    </a>
-                </div>
-                <div class="cube" id="cube3">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgParcNationalDesCalanques" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        <h3 class="txtAct">Parc National des Calanques</h3>
-                    </a>
-                </div>
-                <div class="cube" id="cube4">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgNotreDameDeLaGarde" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                        <h3 class="txtAct">Notre-Dame-de-la-Garde</h3>
-                    </a>
-                </div>
-                <div class="cube" id="cube5">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgIlesDuFrioul" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                        <h3 class="txtAct">Îles du Frioul</h3>
-                    </a>
-                </div>
-                <div class="cube" id="cube6">
-                    <a class="lien" href="">
-                        <img class="imgAct" id="imgParcLongchamp" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                        <h3 class="txtAct">Parc Longchamp</h3>
-                    </a>
-                </div>
-            </section>
         </main>
+        <!-- SECTION 3 ACTIVITES -->
+        <section class="activity" id="activites">
+            <h2 class="titleAct">Activités à Marseille</h2>
+            <div class="cube" id="cube1">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgVieuxPort" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                    <h3 class="txtAct">Vieux Port</h3>
+                </a>
+            </div>
+            <div class="cube" id="cube2">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgFortDePomegues" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <h3 class="txtAct">Fort de Pomègues</h3>
+                </a>
+            </div>
+            <div class="cube" id="cube3">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgParcNationalDesCalanques" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                    <h3 class="txtAct">Parc National des Calanques</h3>
+                </a>
+            </div>
+            <div class="cube" id="cube4">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgNotreDameDeLaGarde" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <h3 class="txtAct">Notre-Dame-de-la-Garde</h3>
+                </a>
+            </div>
+            <div class="cube" id="cube5">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgIlesDuFrioul" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                    <h3 class="txtAct">Îles du Frioul</h3>
+                </a>
+            </div>
+            <div class="cube" id="cube6">
+                <a class="lien" href="">
+                    <img class="imgAct" id="imgParcLongchamp" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <h3 class="txtAct">Parc Longchamp</h3>
+                </a>
+            </div>
+        </section>
         <!-- FOOTER -->
-
         <footer class="footer">
             <div class="colonne">
                 <p>
